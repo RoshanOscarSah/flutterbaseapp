@@ -35,7 +35,9 @@ url_launcher: ^6.2.6
 
 # make this app your own
 
-- clone this repo. Note: This app is not a full app, it is a template to start your app with
+- clone this repo. Note: This app is not a full app, it is a template to start your app with,
+- find all 'com.example.flutterbaseapp' and rename all to your bundle name(dont use space)
+- Enter command 'flutterfire configure -o lib/firebase/dev/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.dev project app, similarly Enter command 'flutterfire configure -o lib/firebase/stg/firebase_options.dart' to and choose stg having com.example.flutterbaseapp.stg and Enter command 'flutterfire configure -o lib/firebase/prod/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.prod
 - find all flutterbaseapp text in this project and rename all to your app name(dont use space)
 - Replace 3 files with same name in firebase/dev, firebase/stg and firebase/prod folder. Support of android, ios and mac is already added to pubspec.yaml. Enter 'flutter pub run flutter_flavorizr' command on terminal to generate flavor for Dev, Stg, and Prod. This will help you build Firebase, crashlytic and analytic. Note: this app has 3 flavor. Dev, Stg, and Prod.
 - OPTIONAL : if you get ext.kotlin_version = '<latest-version>' then, Inside settings.gradle file, find 'org.jetbrains.kotlin.android' and replace version number to latest.
