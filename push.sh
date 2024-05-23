@@ -42,11 +42,15 @@ case "$1" in
         data="p"
         deploy "flutterbaseapp_prod" "lib/main_flutterbaseapp_prod.dart"
         ;;
+    s)
+        data="s"
+        deploy "flutterbaseapp_stg" "lib/main_flutterbaseapp_stg.dart"
+    ;;
     d)
         data="d"
         deploy "flutterbaseapp_dev" "lib/main_flutterbaseapp_dev.dart"
         ;;
     *)
-        echo "Invalid input. Please use 'sh push.sh p' for production or 'sh push.sh d' for development."
+        echo "Invalid input. Please use 'sh push.sh p' for production or 'sh push.sh s' for staging or 'sh push.sh d' for development."
         ;;
 esac

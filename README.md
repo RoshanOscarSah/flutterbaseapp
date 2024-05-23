@@ -32,3 +32,16 @@ permission_handler: ^11.3.1
 persistent_bottom_nav_bar: ^5.0.2
 responsive_sizer: ^3.3.1
 url_launcher: ^6.2.6
+
+# make this app your own
+
+- clone this repo
+- find all flutterbaseapp text in this project and rename all to your app name(dont use space)
+- Replace 3 files with same name in firebase/dev, firebase/stg and firebase/prod folder. Support of android, ios and mac is already added to pubspec.yaml. Enter 'flutter pub run flutter_flavorizr' command on terminal to generate flavor for Dev, Stg, and Prod. This will help you build Firebase, crashlytic and analytic.
+- OPTIONAL : if you get ext.kotlin_version = '<latest-version>' then, Inside settings.gradle file, find 'org.jetbrains.kotlin.android' and replace version number to latest.
+- Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter 'flutter pub run flutter_launcher_icons' command on terminal to generate icons for individual flavors.
+
+# Note
+
+1. This app is not a full app, it is a template to start your app with
+2. this app has 3 flavor. Dev, Stg, and Prod.

@@ -32,6 +32,7 @@
 		33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F42044A3C60003C045 /* MainMenu.xib */; };
 		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
 		44882AAF64AD3DBDF5E4B4DA /* stgRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 473FE092051B0448ED404292 /* stgRelease.xcconfig */; };
+		5BDE6CD51EE623572CFDC6FB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D56CD4A7C8F3E604A9BF52F7 /* GoogleService-Info.plist */; };
 		67CC248849D22CFD49E6913B /* stgDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A55B4D35BAF44CE94CF5C5FE /* stgDebug.xcconfig */; };
 		AD9CE8F19756B7C57021682D /* prodProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D9CD895D2C3133C2022D305 /* prodProfile.xcconfig */; };
 		EB44CEF69F169C7E40B66F27 /* stgProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3DED2460401A1BD0556B7A22 /* stgProfile.xcconfig */; };
@@ -95,6 +96,7 @@
 		81497B9CA5BF120AA7853A3C /* devRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devRelease.xcconfig; path = Runner/Configs/devRelease.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
 		A55B4D35BAF44CE94CF5C5FE /* stgDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stgDebug.xcconfig; path = Runner/Configs/stgDebug.xcconfig; sourceTree = "<group>"; };
+		D56CD4A7C8F3E604A9BF52F7 /* GoogleService-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "Runner/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DD9B7298AC0C4A725A641A4D /* devProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devProfile.xcconfig; path = Runner/Configs/devProfile.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -152,6 +154,7 @@
 				00013AD6944711C40B5392CE /* prodDebug.xcconfig */,
 				4D9CD895D2C3133C2022D305 /* prodProfile.xcconfig */,
 				69E1AD7995C803DF017DB56E /* prodRelease.xcconfig */,
+				D56CD4A7C8F3E604A9BF52F7 /* GoogleService-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -231,6 +234,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 33CC10FB2044A3C60003C045 /* Build configuration list for PBXNativeTarget "Runner" */;
 			buildPhases = (
+				BED88672F8295AC6E3592C64 /* Firebase Setup */,
 				33CC10E92044A3C60003C045 /* Sources */,
 				33CC10EA2044A3C60003C045 /* Frameworks */,
 				33CC10EB2044A3C60003C045 /* Resources */,
@@ -321,6 +325,7 @@
 				2110A599D7D1CCBD978E7383 /* prodDebug.xcconfig in Resources */,
 				AD9CE8F19756B7C57021682D /* prodProfile.xcconfig in Resources */,
 				037B99AF03A2CB57F00CFE4A /* prodRelease.xcconfig in Resources */,
+				5BDE6CD51EE623572CFDC6FB /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +369,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"$FLUTTER_ROOT\"/packages/flutter_tools/bin/macos_assemble.sh && touch Flutter/ephemeral/tripwire";
+		};
+		BED88672F8295AC6E3592C64 /* Firebase Setup */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Firebase Setup";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(SRCROOT)/Runner/GoogleService-Info.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [ \"$CONFIGURATION\" == \"Debug-dev\" ] || [ \"$CONFIGURATION\" == \"Release-dev\" ]; then\n  cp Runner/dev/GoogleService-Info.plist Runner/GoogleService-Info.plist\nelif [ \"$CONFIGURATION\" == \"Debug-stg\" ] || [ \"$CONFIGURATION\" == \"Release-stg\" ]; then\n  cp Runner/stg/GoogleService-Info.plist Runner/GoogleService-Info.plist\nelif [ \"$CONFIGURATION\" == \"Debug-prod\" ] || [ \"$CONFIGURATION\" == \"Release-prod\" ]; then\n  cp Runner/prod/GoogleService-Info.plist Runner/GoogleService-Info.plist\nfi\n\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

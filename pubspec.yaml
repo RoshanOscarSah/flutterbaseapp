@@ -52,30 +52,48 @@ flavorizr: # to run : flutter pub run flutter_flavorizr
           name: "flutterbaseapp Dev"
         android:
           applicationId: "com.example.flutterbaseapp.dev"
+          firebase:
+            config: "firebase/dev/google-services.json"
         ios:
           bundleId: "com.example.flutterbaseapp.dev"
+          firebase:
+            config: "firebase/dev/GoogleService-Info.plist"
         macos:
           bundleId: "com.example.flutterbaseapp.dev"
+          firebase:
+            config: "firebase/dev/GoogleService-Info.plist"
 
     stg: #used for giving app for testing
         app:
           name: "flutterbaseapp Test"
         android:
           applicationId: "com.example.flutterbaseapp.stg"
+          firebase:
+            config: "firebase/stg/google-services.json"
         ios:
           bundleId: "com.example.flutterbaseapp.stg"
+          firebase:
+            config: "firebase/stg/GoogleService-Info.plist"
         macos:
           bundleId: "com.example.flutterbaseapp.stg"
+          firebase:
+            config: "firebase/stg/GoogleService-Info.plist"
 
     prod: #use this app to upload to production
         app:
           name: "flutterbaseapp"
         android:
           applicationId: "com.example.flutterbaseapp.prod"
+          firebase:
+            config: "firebase/prod/google-services.json"
         ios:
           bundleId: "com.example.flutterbaseapp.prod"
+          firebase:
+            config: "firebase/prod/GoogleService-Info.plist"
         macos:
           bundleId: "com.example.flutterbaseapp.prod"
+          firebase:
+            config: "firebase/prod/GoogleService-Info.plist"
 
 
 flutter:
