@@ -35,13 +35,13 @@
             ],
         },
         {
-            "name": "test_app",
+            "name": "stg_app",
             "request": "launch",
             "type": "dart",
-            "program": "lib/main_test.dart", 
+            "program": "lib/main_stg.dart", 
             "args": [
                 "--flavor",
-                "test"
+                "stg"
             ],
         },
         {

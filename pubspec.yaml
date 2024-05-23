@@ -45,10 +45,10 @@ dev_dependencies:
   flutter_flavorizr: ^2.2.3
   pub_version_plus: ^1.1.0
 
-flutter_launcher_icons:
+flutter_launcher_icons: # to run : flutter pub run flutter_launcher_icons
   android: "launcher_icon"
   ios: true
-  image_path: "assets/icon_generate/appicon.jpg"
+  image_path: "assets/icon_generate/appicon.jpg" #check if image for app icon exist
   adaptive_icon_background: "#ffffff"
   min_sdk_android: 21 # android min sdk min:16, default 21
   web:
@@ -64,41 +64,37 @@ flutter_launcher_icons:
     generate: true
     image_path: "assets/icon_generate/appicon.jpg"
   
-flavorizr:
-  flavors:
+flavorizr: # to run : flutter pub run flutter_flavorizr
+  flavors: 
     dev: #used while development
-      app:
-        name: "flutterbaseapp Dev"
-      android:
-        applicationId: "com.example.flutterbaseapp.dev"
-      ios:
-        bundleId: "com.example.flutterbaseapp.dev"
-      macos:
-        bundleId: "com.example.flutterbaseapp.dev"
+        app:
+          name: "flutterbaseapp Dev"
+        android:
+          applicationId: "com.example.flutterbaseapp.dev"
+        ios:
+          bundleId: "com.example.flutterbaseapp.dev"
+        macos:
+          bundleId: "com.example.flutterbaseapp.dev"
 
     stg: #used for giving app for testing
-      app:
-        name: "flutterbaseapp Test"
-      android:
-        applicationId: "com.example.flutterbaseapp.stg"
-      ios:
-        bundleId: "com.example.flutterbaseapp.stg"
-      macos:
-        bundleId: "com.example.flutterbaseapp.stg"
+        app:
+          name: "flutterbaseapp Test"
+        android:
+          applicationId: "com.example.flutterbaseapp.stg"
+        ios:
+          bundleId: "com.example.flutterbaseapp.stg"
+        macos:
+          bundleId: "com.example.flutterbaseapp.stg"
 
     prod: #use this app to upload to production
-      app:
-        name: "flutterbaseapp"
-      android:
-        applicationId: "com.example.flutterbaseapp.prod"
-      ios:
-        bundleId: "com.example.flutterbaseapp.prod"
-      macos:
-        bundleId: "com.example.flutterbaseapp.prod"
-
-      
-
-    
+        app:
+          name: "flutterbaseapp"
+        android:
+          applicationId: "com.example.flutterbaseapp.prod"
+        ios:
+          bundleId: "com.example.flutterbaseapp.prod"
+        macos:
+          bundleId: "com.example.flutterbaseapp.prod"
 
 
 flutter:

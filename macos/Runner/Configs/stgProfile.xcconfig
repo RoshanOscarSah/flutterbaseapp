@@ -1,7 +1,7 @@
-#include "../../Flutter/testProfile.xcconfig"
+#include "../../Flutter/stgProfile.xcconfig"
 #include "Warnings.xcconfig"
 
-FLUTTER_TARGET=lib/main_test.dart
-ASSET_PREFIX=test
+FLUTTER_TARGET=lib/main_stg.dart
+ASSET_PREFIX=stg
 BUNDLE_NAME=flutterbaseapp Test
 BUNDLE_DISPLAY_NAME=flutterbaseapp Test

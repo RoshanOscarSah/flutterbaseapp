@@ -21,21 +21,21 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		037B99AF03A2CB57F00CFE4A /* prodRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 69E1AD7995C803DF017DB56E /* prodRelease.xcconfig */; };
+		2110A599D7D1CCBD978E7383 /* prodDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 00013AD6944711C40B5392CE /* prodDebug.xcconfig */; };
+		29EF8BB48A3FCC5F5FF08D0E /* devDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 6BCCBEF8CE39729328D32871 /* devDebug.xcconfig */; };
+		32A0A225CA6EEEC64718DCF1 /* devProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = DD9B7298AC0C4A725A641A4D /* devProfile.xcconfig */; };
 		331C80D8294CF71000263BE5 /* RunnerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 331C80D7294CF71000263BE5 /* RunnerTests.swift */; };
 		335BBD1B22A9A15E00E9071D /* GeneratedPluginRegistrant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 335BBD1A22A9A15E00E9071D /* GeneratedPluginRegistrant.swift */; };
 		33CC10F12044A3C60003C045 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC10F02044A3C60003C045 /* AppDelegate.swift */; };
 		33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F22044A3C60003C045 /* Assets.xcassets */; };
 		33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33CC10F42044A3C60003C045 /* MainMenu.xib */; };
 		33CC11132044BFA00003C045 /* MainFlutterWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33CC11122044BFA00003C045 /* MainFlutterWindow.swift */; };
-		4EC2D7CF8610982E08DDAA79 /* testProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C2468D176918ACC3685EA193 /* testProfile.xcconfig */; };
-		6676154EFCC8BEAB695F6194 /* testRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 25E6BF30328B03BEA8222FEB /* testRelease.xcconfig */; };
-		87B301DAFEE67BE9ED0C6B16 /* testDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 46A3DDF3F0813A6DB758E760 /* testDebug.xcconfig */; };
-		9341470B15E38AE33F509CE7 /* prodRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 86593648802E30491D2FF6BF /* prodRelease.xcconfig */; };
-		9A91A60F6E5620E908ED5A72 /* prodProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E68C353E3D582325D361ACD7 /* prodProfile.xcconfig */; };
-		C7D6FEC6DE952C97DE0C41D8 /* prodDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = C3AB5F305DBD9CE7C7284E7D /* prodDebug.xcconfig */; };
-		D0D84F41099A2223F3A6EAEF /* devRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 428B816D18DF87F2611D102B /* devRelease.xcconfig */; };
-		E7564F07C3DF05B88A385C7A /* devDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 82DBD7FC5441785E93EB1609 /* devDebug.xcconfig */; };
-		E848BF9404FC5AD8D260F1B3 /* devProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 200D8E5214260B2B1D8DBA71 /* devProfile.xcconfig */; };
+		44882AAF64AD3DBDF5E4B4DA /* stgRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 473FE092051B0448ED404292 /* stgRelease.xcconfig */; };
+		67CC248849D22CFD49E6913B /* stgDebug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = A55B4D35BAF44CE94CF5C5FE /* stgDebug.xcconfig */; };
+		AD9CE8F19756B7C57021682D /* prodProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 4D9CD895D2C3133C2022D305 /* prodProfile.xcconfig */; };
+		EB44CEF69F169C7E40B66F27 /* stgProfile.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 3DED2460401A1BD0556B7A22 /* stgProfile.xcconfig */; };
+		F2C57A223E5FA6A7C482EC3F /* devRelease.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 81497B9CA5BF120AA7853A3C /* devRelease.xcconfig */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +69,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		200D8E5214260B2B1D8DBA71 /* devProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devProfile.xcconfig; path = Runner/Configs/devProfile.xcconfig; sourceTree = "<group>"; };
-		25E6BF30328B03BEA8222FEB /* testRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = testRelease.xcconfig; path = Runner/Configs/testRelease.xcconfig; sourceTree = "<group>"; };
+		00013AD6944711C40B5392CE /* prodDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = prodDebug.xcconfig; path = Runner/Configs/prodDebug.xcconfig; sourceTree = "<group>"; };
 		331C80D5294CF71000263BE5 /* RunnerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RunnerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		331C80D7294CF71000263BE5 /* RunnerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunnerTests.swift; sourceTree = "<group>"; };
 		333000ED22D3DE5D00554162 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
@@ -87,15 +86,16 @@
 		33E51913231747F40026EE4D /* DebugProfile.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DebugProfile.entitlements; sourceTree = "<group>"; };
 		33E51914231749380026EE4D /* Release.entitlements */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.entitlements; path = Release.entitlements; sourceTree = "<group>"; };
 		33E5194F232828860026EE4D /* AppInfo.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = AppInfo.xcconfig; sourceTree = "<group>"; };
-		428B816D18DF87F2611D102B /* devRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devRelease.xcconfig; path = Runner/Configs/devRelease.xcconfig; sourceTree = "<group>"; };
-		46A3DDF3F0813A6DB758E760 /* testDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = testDebug.xcconfig; path = Runner/Configs/testDebug.xcconfig; sourceTree = "<group>"; };
+		3DED2460401A1BD0556B7A22 /* stgProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stgProfile.xcconfig; path = Runner/Configs/stgProfile.xcconfig; sourceTree = "<group>"; };
+		473FE092051B0448ED404292 /* stgRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stgRelease.xcconfig; path = Runner/Configs/stgRelease.xcconfig; sourceTree = "<group>"; };
+		4D9CD895D2C3133C2022D305 /* prodProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = prodProfile.xcconfig; path = Runner/Configs/prodProfile.xcconfig; sourceTree = "<group>"; };
+		69E1AD7995C803DF017DB56E /* prodRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = prodRelease.xcconfig; path = Runner/Configs/prodRelease.xcconfig; sourceTree = "<group>"; };
+		6BCCBEF8CE39729328D32871 /* devDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devDebug.xcconfig; path = Runner/Configs/devDebug.xcconfig; sourceTree = "<group>"; };
 		7AFA3C8E1D35360C0083082E /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
-		82DBD7FC5441785E93EB1609 /* devDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devDebug.xcconfig; path = Runner/Configs/devDebug.xcconfig; sourceTree = "<group>"; };
-		86593648802E30491D2FF6BF /* prodRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = prodRelease.xcconfig; path = Runner/Configs/prodRelease.xcconfig; sourceTree = "<group>"; };
+		81497B9CA5BF120AA7853A3C /* devRelease.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devRelease.xcconfig; path = Runner/Configs/devRelease.xcconfig; sourceTree = "<group>"; };
 		9740EEB21CF90195004384FC /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
-		C2468D176918ACC3685EA193 /* testProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = testProfile.xcconfig; path = Runner/Configs/testProfile.xcconfig; sourceTree = "<group>"; };
-		C3AB5F305DBD9CE7C7284E7D /* prodDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = prodDebug.xcconfig; path = Runner/Configs/prodDebug.xcconfig; sourceTree = "<group>"; };
-		E68C353E3D582325D361ACD7 /* prodProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = prodProfile.xcconfig; path = Runner/Configs/prodProfile.xcconfig; sourceTree = "<group>"; };
+		A55B4D35BAF44CE94CF5C5FE /* stgDebug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = stgDebug.xcconfig; path = Runner/Configs/stgDebug.xcconfig; sourceTree = "<group>"; };
+		DD9B7298AC0C4A725A641A4D /* devProfile.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = devProfile.xcconfig; path = Runner/Configs/devProfile.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,15 +143,15 @@
 				331C80D6294CF71000263BE5 /* RunnerTests */,
 				33CC10EE2044A3C60003C045 /* Products */,
 				D73912EC22F37F3D000D13A0 /* Frameworks */,
-				C3AB5F305DBD9CE7C7284E7D /* prodDebug.xcconfig */,
-				E68C353E3D582325D361ACD7 /* prodProfile.xcconfig */,
-				86593648802E30491D2FF6BF /* prodRelease.xcconfig */,
-				46A3DDF3F0813A6DB758E760 /* testDebug.xcconfig */,
-				C2468D176918ACC3685EA193 /* testProfile.xcconfig */,
-				25E6BF30328B03BEA8222FEB /* testRelease.xcconfig */,
-				82DBD7FC5441785E93EB1609 /* devDebug.xcconfig */,
-				200D8E5214260B2B1D8DBA71 /* devProfile.xcconfig */,
-				428B816D18DF87F2611D102B /* devRelease.xcconfig */,
+				6BCCBEF8CE39729328D32871 /* devDebug.xcconfig */,
+				DD9B7298AC0C4A725A641A4D /* devProfile.xcconfig */,
+				81497B9CA5BF120AA7853A3C /* devRelease.xcconfig */,
+				A55B4D35BAF44CE94CF5C5FE /* stgDebug.xcconfig */,
+				3DED2460401A1BD0556B7A22 /* stgProfile.xcconfig */,
+				473FE092051B0448ED404292 /* stgRelease.xcconfig */,
+				00013AD6944711C40B5392CE /* prodDebug.xcconfig */,
+				4D9CD895D2C3133C2022D305 /* prodProfile.xcconfig */,
+				69E1AD7995C803DF017DB56E /* prodRelease.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -312,15 +312,15 @@
 			files = (
 				33CC10F32044A3C60003C045 /* Assets.xcassets in Resources */,
 				33CC10F62044A3C60003C045 /* MainMenu.xib in Resources */,
-				C7D6FEC6DE952C97DE0C41D8 /* prodDebug.xcconfig in Resources */,
-				9A91A60F6E5620E908ED5A72 /* prodProfile.xcconfig in Resources */,
-				9341470B15E38AE33F509CE7 /* prodRelease.xcconfig in Resources */,
-				87B301DAFEE67BE9ED0C6B16 /* testDebug.xcconfig in Resources */,
-				4EC2D7CF8610982E08DDAA79 /* testProfile.xcconfig in Resources */,
-				6676154EFCC8BEAB695F6194 /* testRelease.xcconfig in Resources */,
-				E7564F07C3DF05B88A385C7A /* devDebug.xcconfig in Resources */,
-				E848BF9404FC5AD8D260F1B3 /* devProfile.xcconfig in Resources */,
-				D0D84F41099A2223F3A6EAEF /* devRelease.xcconfig in Resources */,
+				29EF8BB48A3FCC5F5FF08D0E /* devDebug.xcconfig in Resources */,
+				32A0A225CA6EEEC64718DCF1 /* devProfile.xcconfig in Resources */,
+				F2C57A223E5FA6A7C482EC3F /* devRelease.xcconfig in Resources */,
+				67CC248849D22CFD49E6913B /* stgDebug.xcconfig in Resources */,
+				EB44CEF69F169C7E40B66F27 /* stgProfile.xcconfig in Resources */,
+				44882AAF64AD3DBDF5E4B4DA /* stgRelease.xcconfig in Resources */,
+				2110A599D7D1CCBD978E7383 /* prodDebug.xcconfig in Resources */,
+				AD9CE8F19756B7C57021682D /* prodProfile.xcconfig in Resources */,
+				037B99AF03A2CB57F00CFE4A /* prodRelease.xcconfig in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,9 +414,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1273CFDF556968B939F83AE8 /* Debug-test */ = {
+		18C0F582AEB2535AD87BAE28 /* Debug-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 46A3DDF3F0813A6DB758E760 /* testDebug.xcconfig */;
+			baseConfigurationReference = 6BCCBEF8CE39729328D32871 /* devDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
@@ -478,78 +478,13 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.dev;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
-			name = "Debug-test";
-		};
-		3223AD87D48BE4DEBDC5E462 /* Release-prod */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 86593648802E30491D2FF6BF /* prodRelease.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Flutter",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Flutter",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.prod;
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = "Release-prod";
+			name = "Debug-dev";
 		};
 		331C80DB294CF71000263BE5 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -558,7 +493,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterBaseApp.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flutterbaseapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/flutterbaseapp";
@@ -572,7 +507,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterBaseApp.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flutterbaseapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/flutterbaseapp";
@@ -586,7 +521,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterBaseApp.RunnerTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.RunnerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/flutterbaseapp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/flutterbaseapp";
@@ -829,9 +764,9 @@
 			};
 			name = Release;
 		};
-		4DBFE59D3704455719E747AA /* Profile-test */ = {
+		4A89A772F6DE181DA41C291D /* Profile-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2468D176918ACC3685EA193 /* testProfile.xcconfig */;
+			baseConfigurationReference = DD9B7298AC0C4A725A641A4D /* devProfile.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
@@ -886,17 +821,82 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.dev;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
-			name = "Profile-test";
+			name = "Profile-dev";
 		};
-		655769BCA042FD7CA9B2B385 /* Debug-prod */ = {
+		C081DFA259CE047A6FDEB207 /* Profile-prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C3AB5F305DBD9CE7C7284E7D /* prodDebug.xcconfig */;
+			baseConfigurationReference = 4D9CD895D2C3133C2022D305 /* prodProfile.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.prod;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Profile-prod";
+		};
+		C471F4BEA01A63966CBDD00F /* Debug-prod */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00013AD6944711C40B5392CE /* prodDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
@@ -966,9 +966,9 @@
 			};
 			name = "Debug-prod";
 		};
-		7A6E94AA8085D2C1556743DD /* Release-test */ = {
+		C561141797BD5793F3C1B46A /* Release-stg */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 25E6BF30328B03BEA8222FEB /* testRelease.xcconfig */;
+			baseConfigurationReference = 473FE092051B0448ED404292 /* stgRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
@@ -1023,17 +1023,82 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.test;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.stg;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
-			name = "Release-test";
+			name = "Release-stg";
 		};
-		C29DB843259D67E2084E78D6 /* Debug-dev */ = {
+		CCFE361683CABDE99478B026 /* Release-prod */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82DBD7FC5441785E93EB1609 /* devDebug.xcconfig */;
+			baseConfigurationReference = 69E1AD7995C803DF017DB56E /* prodRelease.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = Runner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Flutter",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.prod;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = "Release-prod";
+		};
+		E6CDDD1767DC6A7226F17A0E /* Debug-stg */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A55B4D35BAF44CE94CF5C5FE /* stgDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
@@ -1095,17 +1160,17 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.stg;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 			};
-			name = "Debug-dev";
+			name = "Debug-stg";
 		};
-		DBD2CAF5A94EF7BF2602B683 /* Profile-dev */ = {
+		EA85DB13F9AD872DF65064D9 /* Profile-stg */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 200D8E5214260B2B1D8DBA71 /* devProfile.xcconfig */;
+			baseConfigurationReference = 3DED2460401A1BD0556B7A22 /* stgProfile.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
@@ -1160,17 +1225,17 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.dev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.stg;
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 5.0;
 			};
-			name = "Profile-dev";
+			name = "Profile-stg";
 		};
-		DFD1992191EAAA387E13EA2F /* Release-dev */ = {
+		F24E462665CFBE1C514DDE42 /* Release-dev */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 428B816D18DF87F2611D102B /* devRelease.xcconfig */;
+			baseConfigurationReference = 81497B9CA5BF120AA7853A3C /* devRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
@@ -1233,71 +1298,6 @@
 			};
 			name = "Release-dev";
 		};
-		E417AB363736A7BD650F056B /* Profile-prod */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E68C353E3D582325D361ACD7 /* prodProfile.xcconfig */;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_APPICON_NAME = "$(ASSET_PREFIX)AppIcon";
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CODE_SIGN_IDENTITY = "-";
-				COPY_PHASE_STRIP = NO;
-				DEAD_CODE_STRIPPING = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Flutter",
-				);
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				INFOPLIST_FILE = Runner/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Flutter",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.flutterbaseapp.prod;
-				SDKROOT = macosx;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
-				SWIFT_VERSION = 5.0;
-			};
-			name = "Profile-prod";
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1317,15 +1317,15 @@
 				33CC10F92044A3C60003C045 /* Debug */,
 				33CC10FA2044A3C60003C045 /* Release */,
 				338D0CE9231458BD00FA5F75 /* Profile */,
-				655769BCA042FD7CA9B2B385 /* Debug-prod */,
-				E417AB363736A7BD650F056B /* Profile-prod */,
-				3223AD87D48BE4DEBDC5E462 /* Release-prod */,
-				1273CFDF556968B939F83AE8 /* Debug-test */,
-				4DBFE59D3704455719E747AA /* Profile-test */,
-				7A6E94AA8085D2C1556743DD /* Release-test */,
-				C29DB843259D67E2084E78D6 /* Debug-dev */,
-				DBD2CAF5A94EF7BF2602B683 /* Profile-dev */,
-				DFD1992191EAAA387E13EA2F /* Release-dev */,
+				18C0F582AEB2535AD87BAE28 /* Debug-dev */,
+				4A89A772F6DE181DA41C291D /* Profile-dev */,
+				F24E462665CFBE1C514DDE42 /* Release-dev */,
+				E6CDDD1767DC6A7226F17A0E /* Debug-stg */,
+				EA85DB13F9AD872DF65064D9 /* Profile-stg */,
+				C561141797BD5793F3C1B46A /* Release-stg */,
+				C471F4BEA01A63966CBDD00F /* Debug-prod */,
+				C081DFA259CE047A6FDEB207 /* Profile-prod */,
+				CCFE361683CABDE99478B026 /* Release-prod */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

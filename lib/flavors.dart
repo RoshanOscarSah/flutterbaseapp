@@ -1,7 +1,7 @@
 enum Flavor {
-  prod,
-  test,
   dev,
+  stg,
+  prod,
 }
 
 class F {
@@ -11,12 +11,12 @@ class F {
 
   static String get title {
     switch (appFlavor) {
-      case Flavor.prod:
-        return 'flutterbaseapp';
-      case Flavor.test:
-        return 'flutterbaseapp Test';
       case Flavor.dev:
         return 'flutterbaseapp Dev';
+      case Flavor.stg:
+        return 'flutterbaseapp Test';
+      case Flavor.prod:
+        return 'flutterbaseapp';
       default:
         return 'title';
     }

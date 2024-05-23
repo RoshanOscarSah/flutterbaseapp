@@ -29,20 +29,20 @@ android {
     flavorDimensions += "flavor-type"
 
     productFlavors {
-        prod {
-            dimension "flavor-type"
-            applicationId "com.example.flutterbaseapp.prod"
-            resValue "string", "app_name", "flutterbaseapp"
-        }
-        staging {
-            dimension "flavor-type"
-            applicationId "com.example.flutterbaseapp.test"
-            resValue "string", "app_name", "flutterbaseapp Test"
-        }
         dev {
             dimension "flavor-type"
             applicationId "com.example.flutterbaseapp.dev"
             resValue "string", "app_name", "flutterbaseapp Dev"
+        }
+        stg {
+            dimension "flavor-type"
+            applicationId "com.example.flutterbaseapp.stg"
+            resValue "string", "app_name", "flutterbaseapp Test"
+        }
+        prod {
+            dimension "flavor-type"
+            applicationId "com.example.flutterbaseapp.prod"
+            resValue "string", "app_name", "flutterbaseapp"
         }
     }
 
@@ -57,7 +57,6 @@ android {
     }
 
     defaultConfig {
-        multiDexEnabled true
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId = "com.example.flutterbaseapp"
         // You can update the following values to match your application needs.
