@@ -35,13 +35,16 @@ url_launcher: ^6.2.6
 
 # make this app your own
 
-- clone this repo
+- clone this repo. Note: This app is not a full app, it is a template to start your app with
 - find all flutterbaseapp text in this project and rename all to your app name(dont use space)
-- Replace 3 files with same name in firebase/dev, firebase/stg and firebase/prod folder. Support of android, ios and mac is already added to pubspec.yaml. Enter 'flutter pub run flutter_flavorizr' command on terminal to generate flavor for Dev, Stg, and Prod. This will help you build Firebase, crashlytic and analytic.
+- Replace 3 files with same name in firebase/dev, firebase/stg and firebase/prod folder. Support of android, ios and mac is already added to pubspec.yaml. Enter 'flutter pub run flutter_flavorizr' command on terminal to generate flavor for Dev, Stg, and Prod. This will help you build Firebase, crashlytic and analytic. Note: this app has 3 flavor. Dev, Stg, and Prod.
 - OPTIONAL : if you get ext.kotlin_version = '<latest-version>' then, Inside settings.gradle file, find 'org.jetbrains.kotlin.android' and replace version number to latest.
-- Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter 'flutter pub run flutter_launcher_icons' command on terminal to generate icons for individual flavors.
+- Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter 'flutter pub run flutter_launcher_icons' command on terminal to generate icons for individual flavors. Note: while generating icon using flutter_launcher_icons, circular icon is not created.
+- Optional change color properties to app theme color in flutter_native_splash.yaml to make app launch stylish. Enter 'dart run flutter_native_splash:create' command on terminal to generate splash page.
+- make .env file at root of this project and fill data like given in .env.example file
 
 # Note
 
 1. This app is not a full app, it is a template to start your app with
 2. this app has 3 flavor. Dev, Stg, and Prod.
+3. while generating icon using flutter_launcher_icons, circular icon is not created.
