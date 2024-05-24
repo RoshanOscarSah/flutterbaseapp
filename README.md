@@ -37,8 +37,10 @@ url_launcher: ^6.2.6
 
 - clone this repo. Note: This app is not a full app, it is a template to start your app with,
 - find all 'com.example.flutterbaseapp' and rename all to your bundle name(dont use space)
-- Enter command 'flutterfire configure -o lib/firebase/dev/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.dev project app, similarly Enter command 'flutterfire configure -o lib/firebase/stg/firebase_options.dart' to and choose stg having com.example.flutterbaseapp.stg and Enter command 'flutterfire configure -o lib/firebase/prod/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.prod
 - find all flutterbaseapp text in this project and rename all to your app name(dont use space)
+- Make firebase project of com.example.flutterbaseapp.dev, com.example.flutterbaseapp.stg, com.example.flutterbaseapp.prod to use firebase.
+  -Enter command 'flutterfire configure -o lib/firebase/dev/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.dev project app, similarly Enter command 'flutterfire configure -o lib/firebase/stg/firebase_options.dart' to and choose stg having com.example.flutterbaseapp.stg and Enter command 'flutterfire configure -o lib/firebase/prod/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.prod
+- Rename all 3 firebase_options.dart class names to DefaultFirebaseOptionsDEV, DefaultFirebaseOptionsSTG and DefaultFirebaseOptionsPROD
 - Replace 3 files with same name in firebase/dev, firebase/stg and firebase/prod folder. Support of android, ios and mac is already added to pubspec.yaml. Enter 'flutter pub run flutter_flavorizr' command on terminal to generate flavor for Dev, Stg, and Prod. This will help you build Firebase, crashlytic and analytic. Note: this app has 3 flavor. Dev, Stg, and Prod.
 - OPTIONAL : if you get ext.kotlin_version = '<latest-version>' then, Inside settings.gradle file, find 'org.jetbrains.kotlin.android' and replace version number to latest.
 - Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter 'flutter pub run flutter_launcher_icons' command on terminal to generate icons for individual flavors. Note: while generating icon using flutter_launcher_icons, circular icon is not created.

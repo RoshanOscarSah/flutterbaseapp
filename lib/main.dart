@@ -11,6 +11,9 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutterbaseapp/feature/auth/data/repository/login_repository.dart';
 import 'package:flutterbaseapp/feature/auth/presentation/cubit/login_cubit.dart';
+import 'package:flutterbaseapp/firebase/dev/firebase_options.dart';
+import 'package:flutterbaseapp/firebase/prod/firebase_options.dart';
+import 'package:flutterbaseapp/firebase/stg/firebase_options.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
@@ -22,9 +25,6 @@ import 'package:flutterbaseapp/core/config/color.dart';
 import 'package:flutterbaseapp/core/config/text_style.dart';
 import 'package:flutterbaseapp/core/navigation/go_router.dart';
 import 'package:flutterbaseapp/core/utils/globals.dart' as globals;
-import 'package:flutterbaseapp/firebase_options_dev.dart';
-import 'package:flutterbaseapp/firebase_options_prod.dart';
-import 'package:flutterbaseapp/firebase_options_stg.dart';
 import 'package:flutterbaseapp/flavors.dart';
 
 void main() async {
@@ -34,15 +34,15 @@ void main() async {
 
   if (F.appFlavor == Flavor.prod) {
     await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
+      options: DefaultFirebaseOptionsPROD.currentPlatform,
     );
   } else if (F.appFlavor == Flavor.stg) {
     await Firebase.initializeApp(
-      options: StgDefaultFirebaseOptions.currentPlatform,
+      options: DefaultFirebaseOptionsSTG.currentPlatform,
     );
   } else if (F.appFlavor == Flavor.dev) {
     await Firebase.initializeApp(
-      options: DevDefaultFirebaseOptions.currentPlatform,
+      options: DefaultFirebaseOptionsDEV.currentPlatform,
     );
   }
 
