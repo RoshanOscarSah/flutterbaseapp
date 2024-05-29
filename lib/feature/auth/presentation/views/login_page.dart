@@ -1,24 +1,10 @@
 import 'package:connectivity_widget/connectivity_widget.dart';
 import 'package:flutterbaseapp/core/config/color.dart';
-import 'package:flutterbaseapp/core/config/constant.dart';
-import 'package:flutterbaseapp/core/utils/get_storage.dart';
-import 'package:flutterbaseapp/core/network/message_code.dart';
-import 'package:flutterbaseapp/core/utils/otp_timer_button.dart';
-import 'package:flutterbaseapp/core/utils/url_launcher.dart';
-import 'package:flutterbaseapp/core/widget/loading_animation.dart';
 import 'package:flutterbaseapp/core/widget/offline_snack.dart';
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
-import 'package:flutter/foundation.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutterbaseapp/feature/auth/presentation/cubit/login_cubit.dart';
-import 'package:go_router/go_router.dart';
-import 'package:onesignal_flutter/onesignal_flutter.dart';
-import 'package:responsive_sizer/responsive_sizer.dart';
-import 'package:flutterbaseapp/core/config/text_style.dart';
-import 'package:flutterbaseapp/core/widget/cus_button.dart';
-import 'package:flutterbaseapp/core/widget/snackbar.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
