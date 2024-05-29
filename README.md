@@ -60,3 +60,77 @@ url_launcher: ^6.2.6
 1. This app is not a full app, it is a template to start your app with
 2. this app has 3 flavor. Dev, Stg, and Prod.
 3. while generating icon using flutter_launcher_icons, circular icon is not created.
+
+---README FILE TEMPLETE--
+
+# APP NAME
+
+## Description
+
+APP DESCRIPTION 3 sentence.
+
+## Features
+
+- User registration, login, and profile updates
+- Image uploads
+- AI-generated images based on user-uploaded images
+- Download or share generated images
+- Stripe payment integration
+- Notifications via OneSignal
+
+## Technologies Used
+
+- Stripe Payment
+- Hydrated Bloc
+- Connectivity Widget
+- OneSignal Notification
+
+## Setup Instructions
+
+1. **Clone the Repository**:
+
+   ```bash
+   git clone -b production <repository_url>
+
+   ```
+
+2. **Ensure Flutter is installed and working**:
+   Note: this app was made with flutter version = 3.22.0.
+
+   ```bash
+   flutter doctor
+
+   ```
+
+3. **Create .env file in root project**:
+   You can find env file content example in .env.example
+4. **Run the app**:
+   ```bash
+   flutter run
+   ```
+
+## Usage Instructions
+
+- Register: Create a new account by providing the required details.
+- Login: Log in using your registered credentials.
+- Payment: Complete the payment process through Stripe.
+- Upload Images: Upload multiple images to generate AI-based avatars.
+- Download/Share: Download or share the generated images.
+
+## Contributing
+
+- Pull from the production branch.
+- Make your changes and create a well-documented Pull Request (PR) with a detailed description of the changes.
+
+## License
+
+APP NAME - AI Image Generation App
+
+## Authors
+
+- NAME1
+- NAME2
+
+## Contact Information
+
+For any questions or support, please contact: Email
