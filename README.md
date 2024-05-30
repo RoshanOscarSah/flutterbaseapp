@@ -95,11 +95,15 @@ command on terminal to generate flavor for Dev, Stg, and Prod. This will help yo
 
 - Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter
 
+NOTE: try using JPG format images
+
 ```bash
 flutter pub run flutter_launcher_icons
 ```
 
 command on terminal to generate icons for individual flavors. Note: while generating icon using flutter_launcher_icons, circular icon is not created.
+
+NOTE : Go to ios/Runner/Assets.xcassets/ and Rename AppIcon-dev.appiconset folder to devAppIcon.appiconset. similarly AppIcon-stg.appiconset folder to stgAppIcon.appiconset and AppIcon-prod.appiconset folder to prodAppIcon.appiconset
 
 - Optional change color properties to app theme color in flutter_native_splash.yaml to make app launch stylish. Enter 'dart run flutter_native_splash:create' command on terminal to generate splash page.
 
