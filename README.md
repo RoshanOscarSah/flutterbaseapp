@@ -95,6 +95,8 @@ command on terminal to generate flavor for Dev, Stg, and Prod. This will help yo
 
 - Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter
 
+NOTE: try using JPG format images
+
 ```bash
 flutter pub run flutter_launcher_icons
 ```
