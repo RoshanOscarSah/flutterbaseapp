@@ -27,26 +27,26 @@ class F {
   static String get baseUrl {
     switch (appFlavor) {
       case Flavor.dev:
-        return dotenv.env['CYLIN_DEV_URL'].toString();
+        return dotenv.env['DEV_BASE_URL'].toString();
       case Flavor.stg:
-        return dotenv.env['CYLIN_STG_URL'].toString();
+        return dotenv.env['STG_BASE_URL'].toString();
       case Flavor.prod:
-        return dotenv.env['CYLIN_PROD_URL'].toString();
+        return dotenv.env['PROD_PROD_URL'].toString();
       default:
-        return dotenv.env['CYLIN_DEV_URL'].toString();
+        return "url";
     }
   }
 
   static String get onesignalId {
     switch (appFlavor) {
       case Flavor.dev:
-        return dotenv.env['CYLIN_DEV_ONESIGNAL_APP_ID'].toString();
+        return dotenv.env['DEV_ONESIGNAL_APP_ID'].toString();
       case Flavor.stg:
-        return dotenv.env['CYLIN_STG_ONESIGNAL_APP_ID'].toString();
+        return dotenv.env['STG_ONESIGNAL_APP_ID'].toString();
       case Flavor.prod:
-        return dotenv.env['CYLIN_PROD_ONESIGNAL_APP_ID'].toString();
+        return dotenv.env['PROD_ONESIGNAL_APP_ID'].toString();
       default:
-        return dotenv.env['CYLIN_DEV_ONESIGNAL_APP_ID'].toString();
+        return "onesignal";
     }
   }
 }

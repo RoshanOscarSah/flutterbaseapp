@@ -11,9 +11,9 @@ import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutterbaseapp/feature/auth/data/repository/login_repository.dart';
 import 'package:flutterbaseapp/feature/auth/presentation/cubit/login_cubit.dart';
-import 'package:flutterbaseapp/firebase/dev/firebase_options.dart';
-import 'package:flutterbaseapp/firebase/prod/firebase_options.dart';
-import 'package:flutterbaseapp/firebase/stg/firebase_options.dart';
+import 'package:flutterbaseapp/firebase/dev/firebase_options.dart' as dev;
+import 'package:flutterbaseapp/firebase/prod/firebase_options.dart' as prod;
+import 'package:flutterbaseapp/firebase/stg/firebase_options.dart' as stg;
 import 'package:get_storage/get_storage.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
@@ -34,15 +34,18 @@ void main() async {
 
   if (F.appFlavor == Flavor.prod) {
     await Firebase.initializeApp(
-      options: DefaultFirebaseOptionsPROD.currentPlatform,
+      name: "panda-prod-app-e2216",
+      options: prod.DefaultFirebaseOptions.currentPlatform,
     );
   } else if (F.appFlavor == Flavor.stg) {
     await Firebase.initializeApp(
-      options: DefaultFirebaseOptionsSTG.currentPlatform,
+      name: "panda-stg-app-21124",
+      options: stg.DefaultFirebaseOptions.currentPlatform,
     );
   } else if (F.appFlavor == Flavor.dev) {
     await Firebase.initializeApp(
-      options: DefaultFirebaseOptionsDEV.currentPlatform,
+      name: "panda-dev-app-12111",
+      options: dev.DefaultFirebaseOptions.currentPlatform,
     );
   }
 
