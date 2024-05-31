@@ -109,6 +109,8 @@ NOTE : Go to ios/Runner/Assets.xcassets/ and Rename AppIcon-dev.appiconset folde
 
 - make .env file at root of this project and fill data like given in .env.example file
 
+-while Sending it to App Store put APPSTORE_APIKEY and APPSTORE_APPISSUER in .env file. also put .keystore inside lib/credential folder
+
 # Note
 
 1. This app is not a full app, it is a template to start your app with
