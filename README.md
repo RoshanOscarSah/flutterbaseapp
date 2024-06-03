@@ -91,6 +91,8 @@ flutter pub run flutter_flavorizr
 
 command on terminal to generate flavor for Dev, Stg, and Prod. This will help you build Firebase, crashlytic and analytic. Note: this app has 3 flavor. Dev, Stg, and Prod. Replace main.dart and flavors.dart.
 
+if firebase not working manually keep google-services.json of three different project in android/app/src/dev, google-services.json in android/app/src/stg, google-services.json in android/app/src/prod.
+
 - OPTIONAL : if you get ext.kotlin_version = '<latest-version>' then, Inside settings.gradle file, find 'org.jetbrains.kotlin.android' and replace version number to latest.
 
 - Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter
