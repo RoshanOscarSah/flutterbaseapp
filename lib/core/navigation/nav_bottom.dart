@@ -1,11 +1,10 @@
-import 'package:flutter/material.dart';
-import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
-
+import 'package:flutterbaseapp/feature/notification/presentation/views/notification_page.dart';
 import 'package:flutterbaseapp/feature/splash/presentation/views/splash_page.dart';
-
-import '../config/color.dart';
-import '../config/page_navigation_const.dart';
-import '../config/text_style.dart';
+import 'package:flutterbaseapp/core/config/color.dart';
+import 'package:flutterbaseapp/core/config/page_navigation_const.dart';
+import 'package:flutterbaseapp/core/config/text_style.dart';
+import 'package:flutter/material.dart';
+import 'package:persistent_bottom_nav_bar_v2/persistent_bottom_nav_bar_v2.dart';
 
 class NavBottom extends StatefulWidget {
   const NavBottom({super.key});
@@ -17,52 +16,6 @@ class NavBottom extends StatefulWidget {
 class _NavBottomState extends State<NavBottom> {
   late PersistentTabController _controller;
 
-  List<Widget> _buildScreens() {
-    return [
-      const SplashPage(),
-      const SplashPage(),
-      const SplashPage(),
-      const SplashPage()
-    ];
-  }
-
-  List<PersistentBottomNavBarItem> _navBarsItems() {
-    return [
-      PersistentBottomNavBarItem(
-        icon: const Icon(Icons.home),
-        title: ("Home"),
-        textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
-        activeColorPrimary: kWhite,
-        inactiveColorPrimary: kP700,
-      ),
-      PersistentBottomNavBarItem(
-        icon: const Icon(Icons.confirmation_num),
-        title: ("My Tickets"),
-        textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
-        activeColorPrimary: kWhite,
-        inactiveColorPrimary: kP700,
-      ),
-      PersistentBottomNavBarItem(
-        icon: const Badge(
-          label: Text('2'),
-          backgroundColor: kR200,
-          child: Icon(Icons.favorite),
-        ),
-        title: ("Favourite"),
-        textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
-        activeColorPrimary: kWhite,
-        inactiveColorPrimary: kP700,
-      ),
-      PersistentBottomNavBarItem(
-        icon: const Icon(Icons.account_circle),
-        title: ("Profile"),
-        textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
-        activeColorPrimary: kWhite,
-        inactiveColorPrimary: kP700,
-      ),
-    ];
-  }
-
   @override
   void initState() {
     super.initState();
@@ -70,40 +23,78 @@ class _NavBottomState extends State<NavBottom> {
     _controller = PersistentTabController(initialIndex: 0);
   }
 
+  List<PersistentTabConfig> get _tab {
+    return [
+      PersistentTabConfig(
+        screen: const SplashPage(),
+        item: ItemConfig(
+          icon: const Icon(Icons.home),
+          title: ("Home"),
+          textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
+          activeForegroundColor: kWhite,
+          inactiveForegroundColor: kP700,
+        ),
+      ),
+      PersistentTabConfig(
+        screen: const SplashPage(),
+        item: ItemConfig(
+          icon: const Icon(Icons.confirmation_num),
+          title: ("My Tickets"),
+          textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
+          activeForegroundColor: kWhite,
+          inactiveForegroundColor: kP700,
+        ),
+      ),
+      PersistentTabConfig(
+        screen: const NotificationPage(),
+        item: ItemConfig(
+          icon: const Badge(
+            label: Text('2'),
+            backgroundColor: kR200,
+            child: Icon(Icons.favorite),
+          ),
+          title: ("Favourite"),
+          textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
+          activeForegroundColor: kWhite,
+          inactiveForegroundColor: kP700,
+        ),
+      ),
+      PersistentTabConfig(
+        screen: const NotificationPage(),
+        item: ItemConfig(
+          icon: const Icon(Icons.account_circle),
+          title: ("Profile"),
+          textStyle: smRegular(color: kWhite, fontFamily: 'changa_one'),
+          activeForegroundColor: kWhite,
+          inactiveForegroundColor: kP700,
+        ),
+      ),
+    ];
+  }
+
   @override
   Widget build(BuildContext context) {
     return PersistentTabView(
-      context,
       controller: _controller,
-      screens: _buildScreens(),
-      items: _navBarsItems(),
-      confineInSafeArea: true,
-      backgroundColor: kP150, // Default is Colors.white.
-      handleAndroidBackButtonPress: true, // Default is true.
-      resizeToAvoidBottomInset:
-          true, // This needs to be true if you want to move up the screen when keyboard appears. Default is true.
-      stateManagement: true, // Default is true.
-      hideNavigationBarWhenKeyboardShows:
-          true, // Recommended to set 'resizeToAvoidBottomInset' as true while using this argument. Default is true.
-      decoration: NavBarDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        colorBehindNavBar: Colors.transparent,
-      ),
+      tabs: _tab,
+      avoidBottomPadding: true,
+      backgroundColor: kP150,
+      handleAndroidBackButtonPress: true,
+      resizeToAvoidBottomInset: true,
+      stateManagement: true,
       popAllScreensOnTapOfSelectedTab: true,
       popActionScreens: PopActionScreensType.all,
-      itemAnimationProperties: const ItemAnimationProperties(
-        // Navigation Bar's items animation properties.
-        duration: duration200,
-        curve: curveEase,
-      ),
       screenTransitionAnimation: const ScreenTransitionAnimation(
-        // Screen transition animation on change of selected tab.
-        animateTabTransition: true,
         curve: Curves.ease,
         duration: duration200,
       ),
-      navBarStyle:
-          NavBarStyle.style6, // Choose the nav bar style with this property.
+      navBarBuilder: (navBarConfig) => Style6BottomNavBar(
+        navBarConfig: navBarConfig,
+        navBarDecoration: NavBarDecoration(
+          borderRadius: BorderRadius.circular(10.0),
+          color: Colors.transparent,
+        ),
+      ),
     );
   }
 }
