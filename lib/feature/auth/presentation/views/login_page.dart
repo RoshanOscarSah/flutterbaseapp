@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutterbaseapp/feature/auth/presentation/cubit/login_cubit.dart';
 import 'package:pixel_perfect/pixel_perfect.dart';
+import 'package:skeletonizer/skeletonizer.dart';
 
 class LoginPage extends StatefulWidget {
   const LoginPage({super.key});
@@ -54,13 +55,16 @@ class _LoginPageState extends State<LoginPage> {
         // assetPath: ImageAsset.kAImContactUsPage,
         child: ConnectivityWidget(
           offlineBanner: const OfflineSnack(),
-          builder: (context, isOnline) => ListView(
-            children: const [
-              SizedBox(
-                height: 200,
-              ),
-              Text("Let' get your app done ...")
-            ],
+          builder: (context, isOnline) => Skeletonizer(
+            enabled: false,
+            child: ListView(
+              children: const [
+                SizedBox(
+                  height: 200,
+                ),
+                Text("Let' get your app done ...")
+              ],
+            ),
           ),
         ),
       ),
