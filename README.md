@@ -112,7 +112,11 @@ command on terminal to generate splash page.
 
 - make .env file at root of this project and fill data like given in .env.example file
 
--while Sending it to App Store put APPSTORE_APIKEY and APPSTORE_APPISSUER in .env file. also put .keystore inside lib/credential folder
+-while Sending it to App Store put APPSTORE_APIKEY and APPSTORE_APPISSUER in .env file. also put .keystore inside lib/credential folder. also setup fastlane. and run below command on terminal
+
+```bash
+sh push.sh
+```
 
 # Note
 
