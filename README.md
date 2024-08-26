@@ -117,8 +117,9 @@ command on terminal to generate splash page.
 # Note
 
 1. This app is not a full app, it is a template to start your app with
-2. this app has 3 flavor. Dev, Stg, and Prod.
-3. while generating icon using flutter_launcher_icons, circular icon is not created.
+2. This app has 3 flavor. Dev, Stg, and Prod.
+3. This app helps with firebase, analytic and crashlytic
+4. While generating icon using icons_launcher from pub.
 
 ---README FILE TEMPLETE--
 
