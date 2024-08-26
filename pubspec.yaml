@@ -112,10 +112,14 @@ flutter:
 
   assets:
     # Add assets from the images directory to the application.
-    - asset/images/
-    - asset/gif/
-    - asset/app_icon_generate/
     - .env
     - .env.dev
     - .env.stg
     - .env.prod
+    - asset/other/
+    - asset/app_icon_generate/
+    - asset/svg/
+    - asset/nav/
+    - asset/icon/
+    - asset/img/
+    - asset/temp/
