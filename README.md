@@ -4,7 +4,7 @@ Start making app with this template
 
 this app has below items as primary setup with core files:
 
-flutter_launcher_icons: ^0.13.1
+icons_launcher: ^2.1.7
 flutter_flavorizr: ^2.2.3
 pub_version_plus: ^1.1.0
 
@@ -14,11 +14,12 @@ cached_network_svg_image: ^1.0.0
 connectivity_widget: ^3.0.0
 dio: ^5.4.3+1
 feedback: ^3.1.0
+firebase_analytics: ^10.10.7
 firebase_core: ^2.31.1
-firebase_crashlytics: ^3.5.6
+firebase_crashlytics: ^3.5.7
 flutter:
 sdk: flutter
-flutter_bloc: ^8.1.5
+flutter_bloc: ^8.1.6
 flutter_dotenv: ^5.1.0
 flutter_local_notifications: ^17.1.2
 flutter_localizations:
@@ -28,7 +29,7 @@ flutter_svg: ^2.0.10+1
 freezed_annotation: ^2.4.1
 geolocator: ^12.0.0
 get_storage: ^2.1.1
-go_router: ^14.1.3
+go_router: ^13.2.5
 hydrated_bloc: ^9.1.5
 image_picker: ^1.1.1
 jwt_decoder: ^2.0.1
@@ -36,7 +37,7 @@ loading_animation_widget: ^1.2.1
 onesignal_flutter: ^5.2.0
 path_provider: ^2.1.3
 permission_handler: ^11.3.1
-persistent_bottom_nav_bar: ^5.0.2
+persistent_bottom_nav_bar_v2: ^5.2.3
 responsive_sizer: ^3.3.1
 upgrader: ^10.3.0
 url_launcher: ^6.2.6
@@ -77,37 +78,37 @@ url_launcher: ^6.2.6
   --android-app-id=com.cubit.flutterbaseapp.prod
   ```
 
-   <!-- 'flutterfire configure -o lib/firebase/dev/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.dev project app, similarly Enter command 'flutterfire configure -o lib/firebase/stg/firebase_options.dart' to and choose stg having com.example.flutterbaseapp.stg and Enter command 'flutterfire configure -o lib/firebase/stg/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.prod Rename all 3 firebase_options.dart class names to DefaultFirebaseOptionsDEV, DefaultFirebaseOptionsSTG and DefaultFirebaseOptionsPROD -->
+- Since above command add all your apps(android, ios, web, etc.) to your firebase project(flutterbaseapp-dev,flutterbaseapp-stg and flutterbaseapp-prod). Now go on individual project(project settings> general> your apps) and
+  a - keep/replace google-services.json of three different project in android/app/src/dev, android/app/src/stg and android/app/src/prod. Note : all three file name should be google-services.json.
+  b - keep/replace GoogleService-Info.plist of three different project in ios/Runner/dev, ios/Runner/stg and ios/Runner/prod. Note : all three file name should be GoogleService-Info.plist.
 
-- Replace 2 files(google-services.json and GoogleService-Info.plist) with same name in firebase/dev, firebase/stg and firebase/prod folder. You can download from firebase project. Support of android, ios and mac is already added to pubspec.yaml.
+- In main.dart file change three names of Firebase.initializeApp according to firebaseprojectId name.
 
-Note: Before creating flavor. backup main.dart and flavors.dart.
-
-Enter
-
-```bash
-flutter pub run flutter_flavorizr
-```
-
-command on terminal to generate flavor for Dev, Stg, and Prod. This will help you build Firebase, crashlytic and analytic. Note: this app has 3 flavor. Dev, Stg, and Prod. Replace main.dart and flavors.dart.
-
-if firebase not working manually keep google-services.json of three different project in android/app/src/dev, google-services.json in android/app/src/stg, google-services.json in android/app/src/prod.
-
-- OPTIONAL : if you get ext.kotlin_version = '<latest-version>' then, Inside settings.gradle file, find 'org.jetbrains.kotlin.android' and replace version number to latest.
-
-- Replace 3 images with same name and format in assets/icon_generate folder to create icon. Enter
+- Replace 3 images with same name and format in asset/app_icon_generate folder to create icon.
 
 NOTE: try using JPG format images
 
 ```bash
-flutter pub run flutter_launcher_icons
+dart run icons_launcher:create --flavor dev
 ```
 
-command on terminal to generate icons for individual flavors. Note: while generating icon using flutter_launcher_icons, circular icon is not created.
+```bash
+dart run icons_launcher:create --flavor stg
+```
 
-NOTE : Go to ios/Runner/Assets.xcassets/ and Rename AppIcon-dev.appiconset folder to devAppIcon.appiconset. similarly AppIcon-stg.appiconset folder to stgAppIcon.appiconset and AppIcon-prod.appiconset folder to prodAppIcon.appiconset
+```bash
+dart run icons_launcher:create --flavor prod
+```
 
-- Optional change color properties to app theme color in flutter_native_splash.yaml to make app launch stylish. Enter 'dart run flutter_native_splash:create' command on terminal to generate splash page.
+Enter command on terminal to generate icons for individual flavors.
+
+- Optional change color properties to app theme color in flutter_native_splash.yaml to make app launch stylish. Enter
+
+```bash
+dart run flutter_native_splash:create
+```
+
+command on terminal to generate splash page.
 
 - make .env file at root of this project and fill data like given in .env.example file
 

@@ -7,7 +7,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
-import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:flutterbaseapp/feature/auth/data/repository/login_repository.dart';
 import 'package:flutterbaseapp/feature/auth/presentation/cubit/login_cubit.dart';
@@ -120,9 +119,6 @@ class MyApp extends StatelessWidget {
                   child: MaterialApp.router(
                     debugShowCheckedModeBanner: false,
                     title: F.title,
-                    localizationsDelegates:
-                        AppLocalizations.localizationsDelegates,
-                    supportedLocales: AppLocalizations.supportedLocales,
                     routerConfig: router,
                   ),
                 );

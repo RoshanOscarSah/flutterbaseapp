@@ -20,7 +20,7 @@ dependencies:
   firebase_crashlytics: ^3.5.6
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.1.5
+  flutter_bloc: ^8.1.6
   flutter_dotenv: ^5.1.0
   flutter_local_notifications: ^17.1.2
   flutter_localizations:
@@ -49,7 +49,7 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^3.0.0
-  flutter_launcher_icons: ^0.13.1
+  icons_launcher: ^2.1.7
   flutter_flavorizr: ^2.2.3
   pub_version_plus: ^1.1.0
   
@@ -112,7 +112,10 @@ flutter:
 
   assets:
     # Add assets from the images directory to the application.
-    - assets/images/
-    - assets/gif/
-    - assets/icon_generate/
+    - asset/images/
+    - asset/gif/
+    - asset/app_icon_generate/
     - .env
+    - .env.dev
+    - .env.stg
+    - .env.prod

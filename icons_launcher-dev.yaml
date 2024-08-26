@@ -1,0 +1,28 @@
+# to create icon=> dart run icons_launcher:create --flavor dev
+icons_launcher:
+  image_path: "asset/app_icon_generate/devAppIcon.jpg"
+  platforms:
+    android:
+      enable: true
+      image_path: "asset/app_icon_generate/devAppIcon.jpg"
+      # adaptive_background_color: '#ffffff'
+      adaptive_background_image: "asset/app_icon_generate/devAppIcon.jpg"
+      adaptive_foreground_image: "asset/app_icon_generate/devAppIcon.jpg"
+      adaptive_round_image: "asset/app_icon_generate/devAppIcon.jpg"
+      adaptive_monochrome_image: "asset/app_icon_generate/devAppIcon.jpg"
+    ios:
+      enable: true
+      image_path: "asset/app_icon_generate/devAppIcon.jpg"
+    web:
+      enable: true
+      image_path: "asset/app_icon_generate/devAppIcon.jpg"
+      favicon_path: "asset/app_icon_generate/devAppIcon.jpg"
+    macos:
+      enable: false
+      image_path: "asset/app_icon_generate/devAppIcon.jpg"
+    windows:
+      enable: false
+      image_path: "asset/app_icon_generate/devAppIcon.jpg"
+    linux:
+      enable: false
+      image_path: "asset/app_icon_generate/devAppIcon.jpg"
