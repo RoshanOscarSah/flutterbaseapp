@@ -1,6 +1,7 @@
 // ignore_for_file: unnecessary_null_comparison
 
 extension ExtString on String {
+
   bool get isValidEmail {
     final emailRegExp = RegExp(r"^[a-zA-Z0-9.]+@[a-zA-Z0-9]+\.[a-zA-Z]+");
     return emailRegExp.hasMatch(this);
@@ -12,10 +13,6 @@ extension ExtString on String {
     return nameRegExp.hasMatch(this);
   }
 
-  bool get isNotNull {
-    return this != null;
-  }
-
   bool get isValidPhone {
     final phoneRegExp = RegExp(
         r"^\s*(?:\+?(\d{1,3}))?[-. (]*(\d{3})[-. )]*(\d{3})[-. ]*(\d{4})(?: *x(\d+))?\s*$");
@@ -25,5 +22,23 @@ extension ExtString on String {
   bool get isValidUsername {
     final usernameRegExp = RegExp(r"^[\w.@+-]+$");
     return usernameRegExp.hasMatch(this);
+  }
+
+  bool get isValidDate {
+    final dateRegExp =
+        RegExp(r"^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/(\d{4})$");
+    return dateRegExp.hasMatch(this);
+  }
+
+  bool get isValidPassword {
+    final passwordRegExp = RegExp(
+        r'^(?=.*[A-Z])(?=.*[a-z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$');
+    return passwordRegExp.hasMatch(this);
+  }
+
+  bool get isValidUrl {
+    final urlRegExp = RegExp(
+        r"^[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_\+.~#?&//=]*)");
+    return urlRegExp.hasMatch(this);
   }
 }

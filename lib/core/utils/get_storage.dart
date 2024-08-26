@@ -1,34 +1,32 @@
 import 'package:get_storage/get_storage.dart';
 
 class GetSetStorage {
-  final box = GetStorage();
+  final GetStorage _box = GetStorage();
 
-  clear() {
-    box.erase();
+  // Clear storage
+  bool clear() {
+    _box.erase();
     return true;
   }
 
-  //accesstoken
-  setAccessToken(String accessToken) {
-    box.write('accessToken', accessToken);
+  // Generic method to write data
+  bool _setData(String key, String value) {
+    _box.write(key, value);
     return true;
   }
 
-  getAccessToken() {
-    var accessToken = box.read('accessToken');
-    return accessToken ?? "";
+  // Generic method to read data
+  String _getData(String key) {
+    return _box.read<String>(key) ?? "";
   }
 
-  //refreshToken
-  setRefreshToken(String refreshToken) {
-    box.write('refreshToken', refreshToken);
-    return true;
-  }
+  // Access Token
+  bool setAccessToken(String accessToken) => _setData('accessToken', accessToken);
+  String getAccessToken() => _getData('accessToken');
 
-  getRefreshToken() {
-    var refreshToken = box.read('refreshToken');
-    return refreshToken ?? "";
-  }
+  // Refresh Token
+  bool setRefreshToken(String refreshToken) => _setData('refreshToken', refreshToken);
+  String getRefreshToken() => _getData('refreshToken');
 
-  
+ 
 }

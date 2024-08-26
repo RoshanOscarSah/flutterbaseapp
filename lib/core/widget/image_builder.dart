@@ -38,7 +38,7 @@ class ImageBuilder extends StatelessWidget {
         },
         errorWidget: (context, url, error) {
           return const Center(
-              child: Icon(Icons.hide_image_outlined, color: kP100));
+              child: Icon(Icons.hide_image_outlined, color: CusColor.kP100));
         },
       );
     } else if (imagePath != null) {

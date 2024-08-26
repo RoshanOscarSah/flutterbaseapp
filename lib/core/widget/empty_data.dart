@@ -3,7 +3,7 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../config/color.dart';
 import '../config/constant.dart';
-import '../config/text_style.dart';
+import '../config/cus_text_style.dart';
 import '../widget/cus_button.dart';
 import '../widget/image_builder.dart';
 import '../widget/svg_builder.dart';
@@ -65,7 +65,7 @@ class EmptyData extends StatelessWidget {
           Text(
             message,
             textAlign: TextAlign.center,
-            style: mdRegular(color: kBlack),
+            style: cusTextStyle(size: 12, weight: 600, color: CusColor.kBlack),
           ),
           SizedBox(
             height: 2.h,
@@ -76,7 +76,8 @@ class EmptyData extends StatelessWidget {
                   onTap: secondaryOnTap,
                   child: Text(
                     secondaryText,
-                    style: mdSemibold(color: kY200),
+                    style: cusTextStyle(
+                        size: 12, weight: 600, color: CusColor.kY200),
                     textAlign: TextAlign.center,
                   ),
                 ),
@@ -86,7 +87,7 @@ class EmptyData extends StatelessWidget {
           if (failedConnectionGif)
             ImageBuilder(
               fit: BoxFit.contain,
-              imagePath: kAFiNoConnection,
+              imagePath: OtherAsset.kAFiNoConnection,
               width: double.infinity,
               height: 30.h,
             ),

@@ -1,16 +1,17 @@
 import 'package:firebase_crashlytics/firebase_crashlytics.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutterbaseapp/feature/notification/presentation/views/notification_page.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:go_router/go_router.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
+import 'package:flutterbaseapp/feature/notification/presentation/views/notification_page.dart';
+
 import '../../../../core/config/color.dart';
 import '../../../../core/config/constant.dart';
-import '../../../../core/config/page_navigation_const.dart';
-import '../../../../core/config/text_style.dart';
+import '../../../../core/config/cus_text_style.dart';
+import '../../../../core/config/duration_transition.dart';
 import '../../../../core/network/api_endpoint.dart';
 import '../../../../core/utils/get_storage.dart';
 import '../../../../core/utils/globals.dart' as globals;
@@ -82,7 +83,7 @@ class _SplashPageState extends State<SplashPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kP100,
+      backgroundColor: CusColor.kP100,
       body: Center(
         child: Stack(
           fit: StackFit.expand,
@@ -96,11 +97,12 @@ class _SplashPageState extends State<SplashPage> {
                     width: 120,
                     height: 120,
                     fit: BoxFit.cover,
-                    imageUrl: kAImLogo,
+                    imageUrl: ImageAsset.kAImLogo,
                   ),
                   Text(
                     "App Name",
-                    style: xxlSemibold(color: kY100),
+                    style: cusTextStyle(
+                        size: 12, weight: 600, color: CusColor.kY100),
                     textAlign: TextAlign.center,
                   )
                 ],
@@ -121,7 +123,10 @@ class _SplashPageState extends State<SplashPage> {
                           children: [
                             Text(
                               "App slogon",
-                              style: lgSemibold(color: kWhite),
+                              style: cusTextStyle(
+                                  size: 12,
+                                  weight: 600,
+                                  color: CusColor.kWhite),
                             ),
                           ],
                         ),

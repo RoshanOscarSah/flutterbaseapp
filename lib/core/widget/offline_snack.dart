@@ -12,8 +12,8 @@ class OfflineSnack extends StatelessWidget {
     return Container(
       padding: const EdgeInsets.all(8),
       width: double.infinity,
-      decoration:
-          BoxDecoration(borderRadius: BorderRadius.circular(5), color: kE100),
+      decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(5), color: CusColor.kE100),
       child: const Text(
         "No Internet Connection",
         style: TextStyle(

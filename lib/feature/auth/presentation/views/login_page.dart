@@ -45,7 +45,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: kP100,
+      backgroundColor: CusColor.kP100,
       body: ConnectivityWidget(
         offlineBanner: const OfflineSnack(),
         builder: (context, isOnline) => ListView(

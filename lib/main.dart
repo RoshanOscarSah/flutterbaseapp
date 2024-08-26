@@ -8,11 +8,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
-import 'package:flutterbaseapp/feature/auth/data/repository/login_repository.dart';
-import 'package:flutterbaseapp/feature/auth/presentation/cubit/login_cubit.dart';
-import 'package:flutterbaseapp/firebase/dev/firebase_options.dart' as dev;
-import 'package:flutterbaseapp/firebase/prod/firebase_options.dart' as prod;
-import 'package:flutterbaseapp/firebase/stg/firebase_options.dart' as stg;
 import 'package:get_storage/get_storage.dart';
 import 'package:hydrated_bloc/hydrated_bloc.dart';
 import 'package:onesignal_flutter/onesignal_flutter.dart';
@@ -21,10 +16,16 @@ import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:upgrader/upgrader.dart';
 
 import 'package:flutterbaseapp/core/config/color.dart';
-import 'package:flutterbaseapp/core/config/text_style.dart';
 import 'package:flutterbaseapp/core/navigation/go_router.dart';
 import 'package:flutterbaseapp/core/utils/globals.dart' as globals;
+import 'package:flutterbaseapp/feature/auth/data/repository/login_repository.dart';
+import 'package:flutterbaseapp/feature/auth/presentation/cubit/login_cubit.dart';
+import 'package:flutterbaseapp/firebase/dev/firebase_options.dart' as dev;
+import 'package:flutterbaseapp/firebase/prod/firebase_options.dart' as prod;
+import 'package:flutterbaseapp/firebase/stg/firebase_options.dart' as stg;
 import 'package:flutterbaseapp/flavors.dart';
+
+import 'core/config/cus_text_style.dart';
 
 void main() async {
   globals.appNavigator = GlobalKey<NavigatorState>();
@@ -105,9 +106,10 @@ class MyApp extends StatelessWidget {
         builder: (context, state) {
           return BetterFeedback(
             theme: FeedbackThemeData(
-              activeFeedbackModeColor: kY100,
-              bottomSheetDescriptionStyle: smSemibold(color: kE100),
-              background: kR200,
+              activeFeedbackModeColor: CusColor.kY100,
+              bottomSheetDescriptionStyle:
+                  cusTextStyle(size: 12, weight: 600, color: CusColor.kE100),
+              background: CusColor.kR200,
             ),
             child: ResponsiveSizer(
               builder: (context, orientation, screenType) {

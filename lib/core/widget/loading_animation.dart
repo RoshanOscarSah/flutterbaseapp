@@ -6,7 +6,7 @@ class LoadingHexa extends StatelessWidget {
   const LoadingHexa({
     super.key,
     this.sizeInt = 20.0,
-    this.color = kWhite,
+    this.color = CusColor.kWhite,
   });
 
   final double sizeInt;
@@ -26,7 +26,7 @@ class LoadingProgressive extends StatelessWidget {
   const LoadingProgressive({
     super.key,
     this.sizeInt = 30.0,
-    this.color = kWhite,
+    this.color = CusColor.kWhite,
   });
 
   final double sizeInt;

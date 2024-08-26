@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../config/color.dart';
-import '../config/text_style.dart';
+import '../config/cus_text_style.dart';
 
 void snackbarBottom(
     {required BuildContext context,
@@ -14,7 +14,7 @@ void snackbarBottom(
       children: [
         const Icon(
           Icons.info,
-          color: kY200,
+          color: CusColor.kY200,
           size: 24,
         ),
         SizedBox(
@@ -26,12 +26,18 @@ void snackbarBottom(
           children: [
             Text(
               title,
-              style: mdRegular(color: kBlack, fontFamily: 'changa_one'),
+              style: cusTextStyle(
+                  size: 12,
+                  weight: 600,
+                  color: CusColor.kBlack,
+                  fontFamily: 'changa_one'),
             ),
             Text(
               subTitle,
-              style: smRegular(
-                color: kBlack,
+              style: cusTextStyle(
+                size: 12,
+                weight: 600,
+                color: CusColor.kBlack,
               ),
             ),
           ],
@@ -40,9 +46,9 @@ void snackbarBottom(
     ),
     behavior: SnackBarBehavior.floating,
     showCloseIcon: true,
-    closeIconColor: kBlack,
-    backgroundColor: kWhite,
-    shape: Border.all(width: 2, color: kBlack),
+    closeIconColor: CusColor.kBlack,
+    backgroundColor: CusColor.kWhite,
+    shape: Border.all(width: 2, color: CusColor.kBlack),
   );
   ScaffoldMessenger.of(context).showSnackBar(snackBar);
 }

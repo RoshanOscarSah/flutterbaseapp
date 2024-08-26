@@ -3,7 +3,7 @@ import 'package:flutter/services.dart';
 import 'package:responsive_sizer/responsive_sizer.dart';
 
 import '../config/color.dart';
-import '../config/text_style.dart';
+import '../config/cus_text_style.dart';
 
 class CusFormField extends StatefulWidget {
   final bool obscureText;
@@ -46,8 +46,10 @@ class _CusFormFieldState extends State<CusFormField> {
         children: [
           Text(
             widget.text,
-            style: mdRegular(
-              color: kBlack,
+            style: cusTextStyle(
+              size: 12,
+              weight: 600,
+              color: CusColor.kBlack,
             ),
           ),
           SizedBox(height: 1.h),
@@ -65,15 +67,18 @@ class _CusFormFieldState extends State<CusFormField> {
                   : widget.autofillPassword == true
                       ? [AutofillHints.password]
                       : null,
-              style: mdRegular(color: kBlack),
+              style:
+                  cusTextStyle(size: 12, weight: 600, color: CusColor.kBlack),
               decoration: widget.obscureText
                   ? InputDecoration(
-                      errorStyle: smRegular(color: kE100),
+                      errorStyle: cusTextStyle(
+                          size: 12, weight: 600, color: CusColor.kE100),
                       contentPadding:
                           const EdgeInsets.symmetric(horizontal: 15),
                       border: const OutlineInputBorder(),
                       hintText: widget.hintText,
-                      hintStyle: mdRegular(color: kP500),
+                      hintStyle: cusTextStyle(
+                          size: 12, weight: 600, color: CusColor.kP500),
                       suffixIcon: GestureDetector(
                         onTap: () {
                           setState(() {
@@ -84,17 +89,19 @@ class _CusFormFieldState extends State<CusFormField> {
                           _seePassword == true
                               ? Icons.visibility
                               : Icons.visibility_off,
-                          color: kBlack300,
+                          color: CusColor.kBlack300,
                         ),
                       ),
                     )
                   : InputDecoration(
-                      errorStyle: smRegular(color: kE100),
+                      errorStyle: cusTextStyle(
+                          size: 12, weight: 600, color: CusColor.kE100),
                       contentPadding:
                           const EdgeInsets.symmetric(horizontal: 15),
                       border: const OutlineInputBorder(),
                       hintText: widget.hintText,
-                      hintStyle: mdRegular(color: kP500),
+                      hintStyle: cusTextStyle(
+                          size: 12, weight: 600, color: CusColor.kP500),
                     )),
         ],
       ),
