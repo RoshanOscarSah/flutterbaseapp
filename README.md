@@ -1,131 +1,102 @@
-# flutterbaseapp
 
-Start making app with this template
+# FlutterBaseApp
 
-this app has below items as primary setup with core files:
+## Description
 
-icons_launcher: ^2.1.7
-flutter_flavorizr: ^2.2.3
-pub_version_plus: ^1.1.0
+FlutterBaseApp is a robust starting template designed to streamline the development process for Flutter applications. This template comes pre-configured with essential libraries and tools to help you quickly set up a project with multi-environment support, including Firebase integration for dev, staging, and production environments.
 
-bloc: ^8.1.4
-cached_network_image: ^3.3.1
-cached_network_svg_image: ^1.0.0
-connectivity_widget: ^3.0.0
-dio: ^5.4.3+1
-feedback: ^3.1.0
-firebase_analytics: ^10.10.7
-firebase_core: ^2.31.1
-firebase_crashlytics: ^3.5.7
-flutter:
-sdk: flutter
-flutter_bloc: ^8.1.6
-flutter_dotenv: ^5.1.0
-flutter_local_notifications: ^17.1.2
-flutter_localizations:
-sdk: flutter
-flutter_native_splash: ^2.4.0
-flutter_svg: ^2.0.10+1
-freezed_annotation: ^2.4.1
-geolocator: ^12.0.0
-get_storage: ^2.1.1
-go_router: ^13.2.5
-hydrated_bloc: ^9.1.5
-image_picker: ^1.1.1
-jwt_decoder: ^2.0.1
-loading_animation_widget: ^1.2.1
-onesignal_flutter: ^5.2.0
-path_provider: ^2.1.3
-permission_handler: ^11.3.1
-persistent_bottom_nav_bar_v2: ^5.2.3
-responsive_sizer: ^3.3.1
-upgrader: ^10.3.0
-url_launcher: ^6.2.6
+## Features
 
-# make this app your own
+- Pre-configured Firebase setup for dev, staging, and production environments.
+- Built-in support for state management using Bloc and Hydrated Bloc.
+- Image handling with cached network images and SVG support.
+- Connectivity status handling and feedback integration.
+- Local notifications and app splash screens.
+- Responsive design with persistent bottom navigation.
 
-- clone this repo. Note: This app is not a full app, it is a template to start your app with,
-- find all 'com.example.flutterbaseapp' and rename all to your bundle name(dont use space)
-- find all flutterbaseapp text in this project and rename all to your app name(dont use space)
-- Make firebase project of com.example.flutterbaseapp.dev, com.example.flutterbaseapp.stg, com.example.flutterbaseapp.prod on website to use firebase. Remember Project ID of 3 firebase project
-  -Replace example project ID with yours dev project and Enter command for eg
+## Technologies Used
 
-  ```bash
-   flutterfire configure \
-  --project=flutterbaseapp-dev-app-e7e16 \
-  --out=lib/firebase/dev/firebase_options.dart \
-  --ios-bundle-id=com.cubit.flutterbaseapp.dev \
-  --android-app-id=com.cubit.flutterbaseapp.dev
-  ```
+- **State Management**: Bloc, Hydrated Bloc
+- **Networking**: Dio
+- **Firebase**: Core, Analytics, Crashlytics
+- **Notifications**: Flutter Local Notifications, OneSignal
+- **Other Utilities**: Icons Launcher, Geolocator, Permission Handler, URL Launcher
 
-  -Replace example project ID with yours stg project and Enter command for eg
+## Setup Instructions
 
-  ```bash
-   flutterfire configure \
-  --project=flutterbaseapp-stg-app-e7116 \
-  --out=lib/firebase/stg/firebase_options.dart \
-  --ios-bundle-id=com.cubit.flutterbaseapp.stg \
-  --android-app-id=com.cubit.flutterbaseapp.stg
-  ```
+1. **Clone the Repository**:
+   ```bash
+   git clone <repository_url>
+   ```
+   > Note: This app is a template to kickstart your project, not a full application.
 
-  -Replace example project ID with yours prod project and Enter command for eg
+2. **Configure Firebase**:
+   - Create Firebase projects for dev, staging, and production environments.
+   - Replace the example project IDs with your Firebase project IDs:
+     ```bash
+     flutterfire configure \
+     --project=<your_dev_project_id> \
+     --out=lib/firebase/<dev_folder_name>/firebase_options.dart \
+     --ios-bundle-id=<your_dev_bundle_id> \
+     --android-app-id=<your_dev_bundle_id>
+     ```
+     Repeat for staging and production environments.
 
-  ```bash
-   flutterfire configure \
-  --project=flutterbaseapp-prod-app-e7116 \
-  --out=lib/firebase/prod/firebase_options.dart \
-  --ios-bundle-id=com.cubit.flutterbaseapp.prod \
-  --android-app-id=com.cubit.flutterbaseapp.prod
-  ```
+   - Add `google-services.json` to `android/app/src/dev`, `android/app/src/stg`, and `android/app/src/prod`.
+   - Add `GoogleService-Info.plist` to `ios/Runner/dev`, `ios/Runner/stg`, and `ios/Runner/prod`.
 
-- Since above command add all your apps(android, ios, web, etc.) to your firebase project(flutterbaseapp-dev,flutterbaseapp-stg and flutterbaseapp-prod). Now go on individual project(project settings> general> your apps) and
-  a - keep/replace google-services.json of three different project in android/app/src/dev, android/app/src/stg and android/app/src/prod. Note : all three file name should be google-services.json.
-  b - keep/replace GoogleService-Info.plist of three different project in ios/Runner/dev, ios/Runner/stg and ios/Runner/prod. Note : all three file name should be GoogleService-Info.plist.
+3. **Set Up App Icons**:
+   - Replace images in `assets/app_icon_generate` and run:
+     ```bash
+     dart run icons_launcher:create --flavor dev
+     dart run icons_launcher:create --flavor stg
+     dart run icons_launcher:create --flavor prod
+     ```
 
-- In main.dart file change three names of Firebase.initializeApp according to firebaseprojectId name.
+4. **Configure Splash Screen** (Optional):
+   - Modify `flutter_native_splash.yaml` as needed and run:
+     ```bash
+     dart run flutter_native_splash:create
+     ```
 
-- Replace 3 images with same name and format in asset/app_icon_generate folder to create icon.
+5. **Environment Configuration**:
+   - Create a `.env` file at the root of the project using `.env.example` as a reference.
 
-NOTE: try using JPG format images
+6. **Run the App**:
+   ```bash
+   flutter run
+   ```
 
-```bash
-dart run icons_launcher:create --flavor dev
-```
+## Usage Instructions
 
-```bash
-dart run icons_launcher:create --flavor stg
-```
+- **Customize the App**:
+  - Rename package identifiers from `com.example.flutterbaseapp` to your own.
+  - Update all occurrences of `flutterbaseapp` with your app's name.
+  - Adjust Firebase initialization in `main.dart`.
 
-```bash
-dart run icons_launcher:create --flavor prod
-```
+- **Deploy to App Store**:
+  - Configure `.env` with your `APPSTORE_APIKEY` and `APPSTORE_APPISSUER`.
+  - Place the `.keystore` file in `lib/credential`.
+  - Set up Fastlane and run:
+    ```bash
+    sh push.sh
+    ```
 
-Enter command on terminal to generate icons for individual flavors.
+## Notes
 
-- Optional change color properties to app theme color in flutter_native_splash.yaml to make app launch stylish. Enter
+1. This app is a starting template, not a complete application.
+2. It includes three flavors: Dev, Stg, and Prod.
+3. Firebase, analytics, and crash reporting are pre-configured.
 
-```bash
-dart run flutter_native_splash:create
-```
+## Contributing
 
-command on terminal to generate splash page.
+- Clone from the main branch.
+- Make your changes and create a detailed Pull Request (PR).
 
-- make .env file at root of this project and fill data like given in .env.example file
 
--while Sending it to App Store put APPSTORE_APIKEY and APPSTORE_APPISSUER in .env file. also put .keystore inside lib/credential folder. also setup fastlane. and run below command on terminal
-
-```bash
-sh push.sh
-```
-
-# Note
-
-1. This app is not a full app, it is a template to start your app with
-2. This app has 3 flavor. Dev, Stg, and Prod.
-3. This app helps with firebase, analytic and crashlytic
-4. While generating icon using icons_launcher from pub.
-
----README FILE TEMPLETE--
+ 
+ 
+# ---README FILE TEMPLETE BELOW--
 
 # APP NAME
 
