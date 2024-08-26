@@ -53,8 +53,8 @@ url_launcher: ^6.2.6
    flutterfire configure \
   --project=flutterbaseapp-dev-app-e7e16 \
   --out=lib/firebase/dev/firebase_options.dart \
-  --ios-bundle-id=com.cubit.panda.dev \
-  --android-app-id=com.cubit.panda.dev
+  --ios-bundle-id=com.cubit.flutterbaseapp.dev \
+  --android-app-id=com.cubit.flutterbaseapp.dev
   ```
 
   -Replace example project ID with yours stg project and Enter command for eg
@@ -63,8 +63,8 @@ url_launcher: ^6.2.6
    flutterfire configure \
   --project=flutterbaseapp-stg-app-e7116 \
   --out=lib/firebase/stg/firebase_options.dart \
-  --ios-bundle-id=com.cubit.panda.stg \
-  --android-app-id=com.cubit.panda.stg
+  --ios-bundle-id=com.cubit.flutterbaseapp.stg \
+  --android-app-id=com.cubit.flutterbaseapp.stg
   ```
 
   -Replace example project ID with yours prod project and Enter command for eg
@@ -73,8 +73,8 @@ url_launcher: ^6.2.6
    flutterfire configure \
   --project=flutterbaseapp-prod-app-e7116 \
   --out=lib/firebase/prod/firebase_options.dart \
-  --ios-bundle-id=com.cubit.panda.prod \
-  --android-app-id=com.cubit.panda.prod
+  --ios-bundle-id=com.cubit.flutterbaseapp.prod \
+  --android-app-id=com.cubit.flutterbaseapp.prod
   ```
 
    <!-- 'flutterfire configure -o lib/firebase/dev/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.dev project app, similarly Enter command 'flutterfire configure -o lib/firebase/stg/firebase_options.dart' to and choose stg having com.example.flutterbaseapp.stg and Enter command 'flutterfire configure -o lib/firebase/stg/firebase_options.dart' to and choose dev having com.example.flutterbaseapp.prod Rename all 3 firebase_options.dart class names to DefaultFirebaseOptionsDEV, DefaultFirebaseOptionsSTG and DefaultFirebaseOptionsPROD -->
